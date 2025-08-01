@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect - College Social Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <img src="https://placehold.co/40x40/transparent/white?text=UC" alt="UniConnect Logo">
+                <h1>UniConnect</h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search classes, clubs, jobs, or people...">
+            </div>
+            <div class="user-actions">
+                <button class="icon-button"><i class="fas fa-bell"></i></button>
+                <button class="icon-button"><i class="fas fa-plus-circle"></i></button>
+                <div class="user-profile-dropdown">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="User Avatar" class="avatar">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle icon-button"><i class="fas fa-bars"></i></button>
+        </header>
+
+        <nav class="sidebar">
+            <ul class="nav-list">
+                <li class="nav-item active" data-section="dashboard">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item" data-section="chat">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat Rooms</span>
+                </li>
+                <li class="nav-item" data-section="hangouts">
+                    <i class="fas fa-video"></i>
+                    <span>Hangouts</span>
+                </li>
+                <li class="nav-item" data-section="jobs">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Job Board</span>
+                </li>
+                <li class="nav-item" data-section="clubs">
+                    <i class="fas fa-users"></i>
+                    <span>Clubs</span>
+                </li>
+                <li class="nav-item" data-section="profile">
+                    <i class="fas fa-user-circle"></i>
+                    <span>My Profile</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <button class="btn btn-primary">Upgrade to Premium</button>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="content-section active">
+                <h2>Welcome, Alex!</h2>
+                <p class="section-description">Your personalized hub for college life.</p>
+
+                <div class="dashboard-grid">
+                    <div class="card activity-feed">
+                        <h3>Recent Activity</h3>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=22" alt="User Avatar" class="avatar-small">
+                            <p><strong>Dr. Smith</strong> posted new lecture notes in <em>Calculus I</em>. <span class="timestamp">2h ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=33" alt="User Avatar" class="avatar-small">
+                            <p><strong>Gaming Club</strong> announced a new tournament! <span class="timestamp">4h ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=44" alt="User Avatar" class="avatar-small">
+                            <p>New internship opportunity at <strong>Tech Solutions Inc.</strong> <span class="timestamp">1d ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=55" alt="User Avatar" class="avatar-small">
+                            <p><strong>Sarah J.</strong> shared a study guide for <em>Organic Chemistry</em>. <span class="timestamp">2d ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=66" alt="User Avatar" class="avatar-small">
+                            <p>Your class <strong>CS 301</strong> has a new assignment due next week. <span class="timestamp">3d ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=77" alt="User Avatar" class="avatar-small">
+                            <p><strong>Debate Society</strong> is hosting a public debate on climate change. <span class="timestamp">4d ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=88" alt="User Avatar" class="avatar-small">
+                            <p><strong>Career Services</strong> updated their mock interview schedule. <span class="timestamp">5d ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=99" alt="User Avatar" class="avatar-small">
+                            <p><strong>Anonymous Chat Room: 'Exam Stress'</strong> is active. <span class="timestamp">6d ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=10" alt="User Avatar" class="avatar-small">
+                            <p><strong>Professor Lee</strong> posted an announcement for <em>Data Structures</em>. <span class="timestamp">1w ago</span></p>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="User Avatar" class="avatar-small">
+                            <p><strong>Photography Club</strong> shared new photos from their campus tour. <span class="timestamp">1w ago</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card my-classes">
+                        <h3>My Classes</h3>
+                        <div class="class-item">
+                            <i class="fas fa-book"></i>
+                            <h4>CS 301: Data Structures</h4>
+                            <p>Prof. Lee - Fall 2024</p>
+                            <button class="btn btn-secondary btn-small">View Group</button>
+                        </div>
+                        <div class="class-item">
+                            <i class="fas fa-flask"></i>
+                            <h4>CHM 201: Organic Chemistry</h4>
+                            <p>Prof. Davis - Fall 2024</p>
+                            <button class="btn btn-secondary btn-small">View Group</button>
+                        </div>
+                        <div class="class-item">
+                            <i class="fas fa-calculator"></i>
+                            <h4>MTH 101: Calculus I</h4>
+                            <p>Prof. Smith - Fall 2024</p>
+                            <button class="btn btn-secondary btn-small">View Group</button>
+                        </div>
+                    </div>
+
+                    <div class="card upcoming-events">
+                        <h3>Upcoming Events</h3>
+                        <div class="event-item">
+                            <div class="event-date"><span>15</span> Oct</div>
+                            <div class="event-details">
+                                <h4>Career Fair 2024</h4>
+                                <p>Campus Auditorium - 10:00 AM</p>
+                                <p class="event-source">Career Services</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date"><span>20</span> Oct</div>
+                            <div class="event-details">
+                                <h4>Gaming Club Meetup</h4>
+                                <p>Student Union - 6:00 PM</p>
+                                <p class="event-source">Gaming Club</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date"><span>25</span> Oct</div>
+                            <div class="event-details">
+                                <h4>Guest Lecture: AI Ethics</h4>
+                                <p>Online (Zoom) - 2:00 PM</p>
+                                <p class="event-source">Computer Science Dept.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ai-recommendations">
+                        <h3>AI Recommendations</h3>
+                        <p>Based on your profile and activity:</p>
+                        <ul>
+                            <li><i class="fas fa-lightbulb"></i> Join the "AI & Robotics Club"</li>
+                            <li><i class="fas fa-briefcase"></i> Check out "Software Engineer Intern" roles at Google</li>
+                            <li><i class="fas fa-book-open"></i> Study group for "Algorithms & Data Structures"</li>
+                        </ul>
+                        <button class="btn btn-secondary">View All Recommendations</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chat Rooms Section -->
+            <section id="chat" class="content-section">
+                <h2>Anonymous Chat Rooms</h2>
+                <p class="section-description">Connect and discuss topics anonymously or reveal your identity.</p>
+
+                <div class="chat-layout">
+                    <div class="chat-room-list card">
+                        <h3>Active Rooms</h3>
+                        <div class="room-item active" data-room="general">
+                            <i class="fas fa-hashtag"></i> General Chit-Chat <span class="badge">120</span>
+                        </div>
+                        <div class="room-item" data-room="exam-stress">
+                            <i class="fas fa-hashtag"></i> Exam Stress Support <span class="badge">45</span>
+                        </div>
+                        <div class="room-item" data-room="dating-advice">
+                            <i class="fas fa-hashtag"></i> Dating Advice <span class="badge">30</span>
+                        </div>
+                        <div class="room-item" data-room="career-talk">
+                            <i class="fas fa-hashtag"></i> Career Talk <span class="badge">60</span>
+                        </div>
+                        <div class="room-item" data-room="gaming">
+                            <i class="fas fa-hashtag"></i> Gaming Lounge <span class="badge">88</span>
+                        </div>
+                        <div class="room-item" data-room="study-buddies">
+                            <i class="fas fa-hashtag"></i> Study Buddies <span class="badge">25</span>
+                        </div>
+                        <div class="room-item" data-room="campus-life">
+                            <i class="fas fa-hashtag"></i> Campus Life <span class="badge">70</span>
+                        </div>
+                        <div class="room-item" data-room="food-reviews">
+                            <i class="fas fa-hashtag"></i> Food Reviews <span class="badge">15</span>
+                        </div>
+                        <div class="room-item" data-room="sports">
+                            <i class="fas fa-hashtag"></i> Sports Talk <span class="badge">55</span>
+                        </div>
+                        <div class="room-item" data-room="music">
+                            <i class="fas fa-hashtag"></i> Music Lovers <span class="badge">40</span>
+                        </div>
+                        <div class="room-item" data-room="tech-trends">
+                            <i class="fas fa-hashtag"></i> Tech Trends <span class="badge">95</span>
+                        </div>
+                        <div class="room-item" data-room="art-design">
+                            <i class="fas fa-hashtag"></i> Art & Design <span class="badge">20</span>
+                        </div>
+                    </div>
+                    <div class="chat-window card">
+                        <div class="chat-header">
+                            <h3>#General Chit-Chat</h3>
+                            <div class="chat-actions">
+                                <button class="btn btn-secondary btn-small toggle-identity-btn"><i class="fas fa-user-secret"></i> Anonymous</button>
+                                <button class="btn btn-secondary btn-small"><i class="fas fa-info-circle"></i> Info</button>
+                            </div>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message received">
+                                <span class="sender">Anonymous User 1</span>
+                                <p>Hey everyone, how's your week going?</p>
+                                <span class="timestamp">10:05 AM</span>
+                            </div>
+                            <div class="message sent">
+                                <span class="sender">You</span>
+                                <p>Pretty good! Just finished a tough assignment.</p>
+                                <span class="timestamp">10:06 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 2</span>
+                                <p>Same here! So ready for the weekend.</p>
+                                <span class="timestamp">10:07 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 3</span>
+                                <p>Anyone else feeling the pre-exam jitters?</p>
+                                <span class="timestamp">10:08 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 4</span>
+                                <p>Totally! DeepSeek AI helped me summarize some complex topics though, highly recommend!</p>
+                                <span class="timestamp">10:09 AM</span>
+                            </div>
+                            <div class="message sent">
+                                <span class="sender">You</span>
+                                <p>Oh, good idea! I should try that for my history class.</p>
+                                <span class="timestamp">10:10 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 5</span>
+                                <p>Yeah, it's a lifesaver. Also, remember to report any inappropriate content, DeepSeek AI helps with moderation too!</p>
+                                <span class="timestamp">10:11 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 6</span>
+                                <p>Anyone know if the library is open late tonight?</p>
+                                <span class="timestamp">10:12 AM</span>
+                            </div>
+                            <div class="message sent">
+                                <span class="sender">You</span>
+                                <p>I think so, until midnight. Check the campus events calendar on the dashboard!</p>
+                                <span class="timestamp">10:13 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 7</span>
+                                <p>Thanks! Good luck with exams everyone!</p>
+                                <span class="timestamp">10:14 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 8</span>
+                                <p>You too! Let's all survive this semester.</p>
+                                <span class="timestamp">10:15 AM</span>
+                            </div>
+                            <div class="message received">
+                                <span class="sender">Anonymous User 9</span>
+                                <p>Anyone up for a virtual hangout later to de-stress?</p>
+                                <span class="timestamp">10:16 AM</span>
+                            </div>
+                            <div class="message sent">
+                                <span class="sender">You</span>
+                                <p>Maybe! I'll check the Hangouts section later.</p>
+                                <span class="timestamp">10:17 AM</span>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="chatInput" placeholder="Type your message...">
+                            <button id="sendMessageBtn" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hangouts Section -->
+            <section id="hangouts" class="content-section">
+                <h2>Virtual Hangout Spaces</h2>
+                <p class="section-description">Join voice/video rooms for studying, gaming, or just chilling.</p>
+
+                <div class="hangout-grid">
+                    <div class="hangout-room card">
+                        <img src="https://placehold.co/600x200?text=Study+Session" alt="Hangout Banner">
+                        <div class="room-info">
+                            <h3>Study Group: CS 301</h3>
+                            <p><i class="fas fa-users"></i> 5/10 members</p>
+                            <p><i class="fas fa-microphone"></i> Voice & Video</p>
+                            <button class="btn btn-primary btn-small">Join Room</button>
+                        </div>
+                    </div>
+                    <div class="hangout-room card">
+                        <img src="https://placehold.co/600x200?text=Gaming+Lounge" alt="Hangout Banner">
+                        <div class="room-info">
+                            <h3>Gaming Lounge: Among Us</h3>
+                            <p><i class="fas fa-users"></i> 8/12 members</p>
+                            <p><i class="fas fa-microphone"></i> Voice Only</p>
+                            <button class="btn btn-primary btn-small">Join Room</button>
+                        </div>
+                    </div>
+                    <div class="hangout-room card">
+                        <img src="https://placehold.co/600x200?text=Chill+Zone" alt="Hangout Banner">
+                        <div class="room-info">
+                            <h3>Chill & Chat</h3>
+                            <p><i class="fas fa-users"></i> 15/20 members</p>
+                            <p><i class="fas fa-microphone"></i> Voice & Video</p>
+                            <button class="btn btn-primary btn-small">Join Room</button>
+                        </div>
+                    </div>
+                    <div class="hangout-room card">
+                        <img src="https://placehold.co/600x200?text=Art+Workshop" alt="Hangout Banner">
+                        <div class="room-info">
+                            <h3>Art & Design Workshop</h3>
+                            <p><i class="fas fa-users"></i> 3/8 members</p>
+                            <p><i class="fas fa-microphone"></i> Voice & Screen Share</p>
+                            <button class="btn btn-primary btn-small">Join Room</button>
+                        </div>
+                    </div>
+                    <div class="hangout-room card">
+                        <img src="https://placehold.co/600x200?text=Music+Jam" alt="Hangout Banner">
+                        <div class="room-info">
+                            <h3>Music Jam Session</h3>
+                            <p><i class="fas fa-users"></i> 6/10 members</p>
+                            <p><i class="fas fa-microphone"></i> Voice Only</p>
+                            <button class="btn btn-primary btn-small">Join Room</button>
+                        </div>
+                    </div>
+                    <div class="hangout-room card">
+                        <img src="https://placehold.co/600x200?text=Book+Club" alt="Hangout Banner">
+                        <div class="room-info">
+                            <h3>Book Club Discussion</h3>
+                            <p><i class="fas fa-users"></i> 4/7 members</p>
+                            <p><i class="fas fa-microphone"></i> Voice & Video</p>
+                            <button class="btn btn-primary btn-small">Join Room</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary create-room-btn"><i class="fas fa-plus"></i> Create New Room</button>
+            </section>
+
+            <!-- Job Board Section -->
+            <section id="jobs" class="content-section">
+                <h2>Job & Internship Board</h2>
+                <p class="section-description">Find your next opportunity with AI-matched listings.</p>
+
+                <div class="job-board-layout">
+                    <div class="job-filters card">
+                        <h3>Filters</h3>
+                        <div class="filter-group">
+                            <label for="job-type">Job Type</label>
+                            <select id="job-type">
+                                <option value="">All</option>
+                                <option value="internship">Internship</option>
+                                <option value="full-time">Full-time</option>
+                                <option value="part-time">Part-time</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="e.g., New York, Remote">
+                        </div>
+                        <div class="filter-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry">
+                                <option value="">All</option>
+                                <option value="tech">Technology</option>
+                                <option value="finance">Finance</option>
+                                <option value="healthcare">Healthcare</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary">Apply Filters</button>
+                    </div>
+
+                    <div class="job-listings">
+                        <div class="ai-tools card">
+                            <h3>AI Career Tools</h3>
+                            <button class="btn btn-secondary"><i class="fas fa-file-alt"></i> AI Resume Review</button>
+                            <button class="btn btn-secondary"><i class="fas fa-microphone-alt"></i> AI Mock Interview</button>
+                            <button class="btn btn-secondary"><i class="fas fa-robot"></i> Ask DeepSeek AI about Careers</button>
+                        </div>
+
+                        <div class="job-card card">
+                            <div class="job-header">
+                                <img src="https://logo.clearbit.com/google.com" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h4>Software Engineer Intern</h4>
+                                    <p>Google</p>
+                                </div>
+                            </div>
+                            <p class="job-location"><i class="fas fa-map-marker-alt"></i> Mountain View, CA (Hybrid)</p>
+                            <p class="job-description">Develop and test software for various Google products. Work on challenging projects with experienced engineers.</p>
+                            <div class="job-tags">
+                                <span class="tag">Internship</span>
+                                <span class="tag">Tech</span>
+                                <span class="tag">AI-Matched</span>
+                            </div>
+                            <button class="btn btn-primary btn-small">Apply Now</button>
+                        </div>
+
+                        <div class="job-card card">
+                            <div class="job-header">
+                                <img src="https://logo.clearbit.com/microsoft.com" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h4>Data Analyst (Entry-Level)</h4>
+                                    <p>Microsoft</p>
+                                </div>
+                            </div>
+                            <p class="job-location"><i class="fas fa-map-marker-alt"></i> Redmond, WA</p>
+                            <p class="job-description">Analyze large datasets to provide insights and support business decisions across various product teams.</p>
+                            <div class="job-tags">
+                                <span class="tag">Full-time</span>
+                                <span class="tag">Data</span>
+                                <span class="tag">AI-Matched</span>
+                            </div>
+                            <button class="btn btn-primary btn-small">Apply Now</button>
+                        </div>
+
+                        <div class="job-card card">
+                            <div class="job-header">
+                                <img src="https://logo.clearbit.com/amazon.com" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h4>UX Design Intern</h4>
+                                    <p>Amazon</p>
+                                </div>
+                            </div>
+                            <p class="job-location"><i class="fas fa-map-marker-alt"></i> Seattle, WA (Remote)</p>
+                            <p class="job-description">Contribute to user research, wireframing, and prototyping for Amazon's e-commerce platforms.</p>
+                            <div class="job-tags">
+                                <span class="tag">Internship</span>
+                                <span class="tag">Design</span>
+                            </div>
+                            <button class="btn btn-primary btn-small">Apply Now</button>
+                        </div>
+
+                        <div class="job-card card">
+                            <div class="job-header">
+                                <img src="https://logo.clearbit.com/facebook.com" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h4>Product Management Intern</h4>
+                                    <p>Meta</p>
+                                </div>
+                            </div>
+                            <p class="job-location"><i class="fas fa-map-marker-alt"></i> Menlo Park, CA</p>
+                            <p class="job-description">Assist product managers in defining product roadmaps, analyzing market trends, and launching new features.</p>
+                            <div class="job-tags">
+                                <span class="tag">Internship</span>
+                                <span class="tag">Product</span>
+                                <span class="tag">AI-Matched</span>
+                            </div>
+                            <button class="btn btn-primary btn-small">Apply Now</button>
+                        </div>
+
+                        <div class="job-card card">
+                            <div class="job-header">
+                                <img src="https://logo.clearbit.com/apple.com" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h4>Software Development Engineer</h4>
+                                    <p>Apple</p>
+                                </div>
+                            </div>
+                            <p class="job-location"><i class="fas fa-map-marker-alt"></i> Cupertino, CA</p>
+                            <p class="job-description">Join a team building innovative software solutions for Apple's ecosystem, focusing on performance and user experience.</p>
+                            <div class="job-tags">
+                                <span class="tag">Full-time</span>
+                                <span class="tag">Engineering</span>
+                                <span class="tag">AI-Matched</span>
+                            </div>
+                            <button class="btn btn-primary btn-small">Apply Now</button>
+                        </div>
+
+                        <div class="job-card card">
+                            <div class="job-header">
+                                <img src="https://logo.clearbit.com/netflix.com" alt="Company Logo" class="company-logo">
+                                <div>
+                                    <h4>Content Marketing Intern</h4>
+                                    <p>Netflix</p>
+                                </div>
+                            </div>
+                            <p class="job-location"><i class="fas fa-map-marker-alt"></i> Los Gatos, CA</p>
+                            <p class="job-description">Support the marketing team in creating engaging content strategies for Netflix's global audience.</p>
+                            <div class="job-tags">
+                                <span class="tag">Internship</span>
+                                <span class="tag">Marketing</span>
+                            </div>
+                            <button class="btn btn-primary btn-small">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clubs Section -->
+            <section id="clubs" class="content-section">
+                <h2>Interest-Based Clubs</h2>
+                <p class="section-description">Discover and join communities that match your passions.</p>
+
+                <div class="clubs-header">
+                    <button class="btn btn-primary create-club-btn"><i class="fas fa-plus"></i> Create New Club</button>
+                    <div class="search-filter">
+                        <input type="text" placeholder="Search clubs...">
+                        <select>
+                            <option value="">All Categories</option>
+                            <option value="academic">Academic</option>
+                            <option value="sports">Sports</option>
+                            <option value="arts">Arts & Culture</option>
+                            <option value="social">Social</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="club-grid">
+                    <div class="club-card card">
+                        <img src="https://placehold.co/600x200?text=Gaming+Club" alt="Club Banner" class="club-banner">
+                        <div class="club-info">
+                            <h3>Gaming Club</h3>
+                            <p class="club-category"><i class="fas fa-gamepad"></i> Gaming</p>
+                            <p class="club-members"><i class="fas fa-users"></i> 250 members</p>
+                            <p class="club-description">Connect with fellow gamers, organize tournaments, and discuss the latest titles.</p>
+                            <button class="btn btn-secondary btn-small">View Club</button>
+                        </div>
+                    </div>
+                    <div class="club-card card">
+                        <img src="https://placehold.co/600x200?text=Photography+Club" alt="Club Banner" class="club-banner">
+                        <div class="club-info">
+                            <h3>Photography Club</h3>
+                            <p class="club-category"><i class="fas fa-camera"></i> Arts & Culture</p>
+                            <p class="club-members"><i class="fas fa-users"></i> 120 members</p>
+                            <p class="club-description">Explore the art of photography, share your work, and join photo walks.</p>
+                            <button class="btn btn-secondary btn-small">View Club</button>
+                        </div>
+                    </div>
+                    <div class="club-card card">
+                        <img src="https://placehold.co/600x200?text=Debate+Society" alt="Club Banner" class="club-banner">
+                        <div class="club-info">
+                            <h3>Debate Society</h3>
+                            <p class="club-category"><i class="fas fa-gavel"></i> Academic</p>
+                            <p class="club-members"><i class="fas fa-users"></i> 80 members</p>
+                            <p class="club-description">Sharpen your public speaking and critical thinking skills through engaging debates.</p>
+                            <button class="btn btn-secondary btn-small">View Club</button>
+                        </div>
+                    </div>
+                    <div class="club-card card">
+                        <img src="https://placehold.co/600x200?text=Coding+Club" alt="Club Banner" class="club-banner">
+                        <div class="club-info">
+                            <h3>Coding Club</h3>
+                            <p class="club-category"><i class="fas fa-code"></i> Academic</p>
+                            <p class="club-members"><i class="fas fa-users"></i> 300 members</p>
+                            <p class="club-description">Learn new programming languages, collaborate on projects, and prepare for coding challenges.</p>
+                            <button class="btn btn-secondary btn-small">View Club</button>
+                        </div>
+                    </div>
+                    <div class="club-card card">
+                        <img src="https://placehold.co/600x200?text=Outdoor+Adventures" alt="Club Banner" class="club-banner">
+                        <div class="club-info">
+                            <h3>Outdoor Adventures Club</h3>
+                            <p class="club-category"><i class="fas fa-mountain"></i> Sports</p>
+                            <p class="club-members"><i class="fas fa-users"></i> 180 members</p>
+                            <p class="club-description">Explore nature, go hiking, camping, and discover new outdoor activities.</p>
+                            <button class="btn btn-secondary btn-small">View Club</button>
+                        </div>
+                    </div>
+                    <div class="club-card card">
+                        <img src="https://placehold.co/600x200?text=Film+Society" alt="Club Banner" class="club-banner">
+                        <div class="club-info">
+                            <h3>Film Society</h3>
+                            <p class="club-category"><i class="fas fa-film"></i> Arts & Culture</p>
+                            <p class="club-members"><i class="fas fa-users"></i> 95 members</p>
+                            <p class="club-description">Discuss films, organize movie nights, and even create your own short films.</p>
+                            <button class="btn btn-secondary btn-small">View Club</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profile Section -->
+            <section id="profile" class="content-section">
+                <h2>My Profile</h2>
+                <p class="section-description">Manage your personal information and academic details.</p>
+
+                <div class="profile-layout">
+                    <div class="profile-header card">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="User Avatar" class="profile-avatar">
+                        <div class="profile-details">
+                            <h3>Alex Johnson</h3>
+                            <p>Computer Science, Senior</p>
+                            <p>University of Example</p>
+                            <p class="bio">Passionate about AI, web development, and competitive gaming. Always looking to learn and connect!</p>
+                            <button class="btn btn-secondary btn-small"><i class="fas fa-edit"></i> Edit Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="profile-sections">
+                        <div class="card">
+                            <h3>Academic Info</h3>
+                            <ul>
+                                <li><strong>Major:</strong> Computer Science</li>
+                                <li><strong>Minor:</strong> Mathematics</li>
+                                <li><strong>Graduation Year:</strong> 2025</li>
+                                <li><strong>Current GPA:</strong> 3.8</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Interests</h3>
+                            <div class="interest-tags">
+                                <span class="tag">Artificial Intelligence</span>
+                                <span class="tag">Web Development</span>
+                                <span class="tag">Gaming</span>
+                                <span class="tag">Photography</span>
+                                <span class="tag">Hiking</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>My Clubs</h3>
+                            <ul>
+                                <li>Gaming Club</li>
+                                <li>Coding Club</li>
+                                <li>Photography Club</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>My Classes</h3>
+                            <ul>
+                                <li>CS 301: Data Structures</li>
+                                <li>CHM 201: Organic Chemistry</li>
+                                <li>MTH 101: Calculus I</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login to UniConnect</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p class="modal-switch">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Join UniConnect</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">University Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <p class="modal-switch">Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+<!-- 
+    <div id="aiChatbotModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>DeepSeek AI Assistant</h2>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message received">
+                    <span class="sender">DeepSeek AI</span>
+                    <p>Hello! How can I assist you today? I can help with study questions, platform navigation, or general inquiries.</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Ask me anything...">
+                <button id="sendChatbotMessageBtn" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div> -->
+
+    <button id="aiChatbotToggle" class="ai-chatbot-toggle"><i class="fas fa-robot"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
